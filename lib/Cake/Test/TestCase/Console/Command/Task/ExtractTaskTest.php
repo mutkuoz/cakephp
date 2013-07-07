@@ -280,6 +280,7 @@ class ExtractTaskTest extends TestCase {
 		$this->assertNotRegExp('#Pages#', $result);
 		$this->assertContains('translate.ctp:1', $result);
 		$this->assertContains('This is a translatable string', $result);
+		$this->assertContains('I can haz plugin model validation message', $result);
 	}
 
 /**
